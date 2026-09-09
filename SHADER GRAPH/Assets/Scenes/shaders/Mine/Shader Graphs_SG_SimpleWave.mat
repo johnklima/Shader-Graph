@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_SG_0 1
+  m_Name: Shader Graphs_SG_SimpleWave
   m_Shader: {fileID: -6465566751694194690, guid: 76d31369ed97b6f47bbfeab94197ad48, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
