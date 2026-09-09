@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Water
+  m_Name: Shader Graphs_DepthWater
   m_Shader: {fileID: -6465566751694194690, guid: c090f78f43a6bf8408d6fdb054d87e09, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -24,6 +24,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _SampleTexture2DLOD_6bb341c222b94bc49ef8a3af208a39eb_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 33eb6434ae5d443479353466ea0fc11d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_2d1eb812d06641bb82676e8c11b85c8f_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: fd895bdeba081d24baa38d6d2edd2bc2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a687dacd818a44b3b9a22d79d7ebc1d6_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: f2739d8fac5bca94aa732b17b64e772d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -38,10 +50,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Amplitude: 1
     - _Frequency: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _WaterDepth: 6.55
+    - _Speed: 1
+    - _WaterDepth: 1.4
     - _Wave_Speed: 1
     m_Colors:
     - _DeepColor: {r: 0.046661735, g: 0.03510532, b: 0.44654077, a: 1}
