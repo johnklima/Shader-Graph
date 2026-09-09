@@ -49,12 +49,20 @@ Material:
         m_Texture: {fileID: 2800000, guid: d69c63025b4be8043b7fa3c3cd6bc280, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Rock064_2K_PNG_Displacement:
+        m_Texture: {fileID: 2800000, guid: 65e0c93c41dbb9046a73f81a70392335, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Rock064_2K_PNG_NormalDX:
         m_Texture: {fileID: 2800000, guid: 67c310869d179314da1eac1550711772, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Rock064_2K_PNG_Roughness:
         m_Texture: {fileID: 2800000, guid: ea4fe2d1cfc1e1746a3e105c68f4c5a9, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2DLOD_28b4df1ebe43446a91552aec368dbc53_Texture_1_Texture2D:
+        m_Texture: {fileID: 2800000, guid: 65e0c93c41dbb9046a73f81a70392335, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SampleTexture2D_11d9e0b9cda24d35a661ddab80ea5b8c_Texture_1_Texture2D:
