@@ -1,0 +1,920 @@
+/* ============================================
+   Synty Asset Downloader V2 - UI Toolkit Styles
+   ============================================ */
+
+/* ===== Root & Main Frame ===== */
+.main-frame {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    position: relative;
+}
+
+.frame-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* ===== Content Area ===== */
+.content {
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+/* ===== Main Layout ===== */
+.main-layout {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+/* ===== Filter Section ===== */
+.filter-section {
+    padding-top: 15px;
+    width: 140.7px;
+    flex-shrink: 0;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.filter-scroll {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.filter-content {
+    flex-direction: column;
+    padding-right: 5px;
+    overflow: hidden;
+}
+
+/* ===== Filter Groups ===== */
+.filter-group {
+    margin-bottom: 15px;
+}
+
+.filter-header {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    position: relative;
+}
+
+.filter-title {
+    font-size: 8px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.all-none-container {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.all-none-btn {
+    font-size: 10px;
+    padding: 2px 8px;
+    margin-left: 4px;
+    background-color: #2a2a3e;
+    border-radius: 10px;
+    border-width: 0;
+    color: #ffffff;
+    -unity-font-style: bold;
+}
+
+.all-none-btn:hover {
+    background-color: #3a3a4e;
+}
+
+.all-none-btn:disabled {
+    opacity: 0.4;
+}
+
+.chevron-container {
+    flex-shrink: 0;
+    padding: 4px 0px 4px 6px;
+    margin-right: -5px;
+    cursor: link;
+    width: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Applied only while the filter scrollbar is showing — pulls the chevron in against None so it
+   clears the floating scrollbar; removed when there's no scrollbar (original position). */
+.chevron-container.scroll-tight {
+    padding-left: 0px;
+    margin-left: -8px;
+}
+
+.filter-chevron {
+    width: 12px;
+    height: 12px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.filter-group-content {
+    padding-top: 0;
+    flex-direction: column;
+}
+
+/* ===== Toggle Buttons ===== */
+.filter-toggle-btn {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    align-self: flex-start;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    background-color: transparent;
+    border-width: 0;
+    color: #aaaaaa;
+    font-size: 11px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-left;
+    height: 32px;
+    overflow: hidden;
+}
+
+.filter-toggle-btn:hover {
+    /* Hover handled via overlay in code */
+}
+
+.filter-toggle-btn--active {
+    /* Color applied via code */
+}
+
+.filter-toggle-btn--active:hover {
+    /* Hover handled via overlay in code */
+}
+
+.filter-btn-hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -unity-background-image-tint-color: white;
+}
+
+.filter-btn-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.filter-btn-label {
+    color: #ffffff;
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+.filter-toggle-btn--active .filter-btn-label {
+    color: #ffffff;
+}
+
+/* ===== Right Panel ===== */
+.right-panel {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+/* ===== Collection Section ===== */
+.collection-section {
+    flex-shrink: 0;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+.collection-title {
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.collection-main-row {
+    flex-direction: row;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.collection-count-block {
+    flex-shrink: 0;
+    margin-right: 12px;
+}
+
+.collection-stats-row {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.collection-owned-count {
+    font-size: 32px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin-right: 2px;
+}
+
+.collection-total-section {
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 2px;
+}
+
+.collection-total-count {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: #666666;
+}
+
+.collection-packs-label {
+    font-size: 9px;
+    -unity-font-style: bold;
+    color: #666666;
+}
+
+.collection-top-row {
+    flex-grow: 1;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.collection-left {
+    width: 200px;
+    flex-shrink: 0;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    flex-direction: column;
+}
+
+.collection-content {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 4px;
+}
+
+/* ===== Percentage Section ===== */
+.percentage-section {
+    height: 24px;
+    flex-shrink: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10px;
+}
+
+.progress-bar-container {
+    flex-grow: 1;
+    height: 14px;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.progress-bar-bg {
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    -unity-background-image-tint-color: #00d4aa;
+}
+
+.percentage-text-container {
+    flex-direction: row;
+    align-items: flex-end;
+    min-width: 50px;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+
+.percentage-text {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: #00d4aa;
+    -unity-text-align: middle-right;
+}
+
+.percentage-symbol {
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: #00d4aa;
+    -unity-text-align: middle-left;
+}
+
+/* ===== Asset Options Section ===== */
+.asset-options-section {
+    flex-direction: row;
+    padding: 0 10px;
+    align-items: flex-end;
+}
+
+.asset-options-group {
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.asset-options-label {
+    font-size: 10px;
+    color: #ffffff;
+    margin-bottom: 0;
+}
+
+.asset-options-select-btns {
+    flex-direction: row;
+}
+
+.asset-options-select-btn {
+    font-size: 10px;
+    padding: 2px 8px;
+    margin-left: 4px;
+    background-color: #2a2a3e;
+    border-radius: 10px;
+    border-width: 0;
+    color: #ffffff;
+    -unity-font-style: bold;
+}
+
+.asset-options-select-btn:hover {
+    background-color: #3a3a4e;
+}
+
+.asset-options-search-container {
+    flex-grow: 1;
+    flex-direction: row;
+    align-items: center;
+    background-color: #1e1c29;
+    border-radius: 20px;
+    padding: 6px 14px;
+    margin-right: 10px;
+    height: 32px;
+}
+
+.asset-options-search-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    -unity-background-scale-mode: scale-to-fit;
+    opacity: 0.5;
+}
+
+.asset-options-search-field {
+    flex-grow: 1;
+    background-color: transparent;
+    border-width: 0;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.asset-options-search-field > TextInput {
+    background-color: transparent;
+    border-width: 0;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+.asset-options-search-placeholder {
+    position: absolute;
+    left: 0;
+    color: #666666;
+    font-size: 12px;
+}
+
+.asset-options-search-clear {
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: link;
+}
+
+.asset-options-search-clear:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.asset-options-search-clear-label {
+    font-size: 10px;
+    color: #999999;
+    -unity-text-align: middle-center;
+}
+
+.asset-options-sort {
+    min-width: 100px;
+    overflow: hidden;
+}
+
+.asset-options-sort > Label {
+    display: none;
+}
+
+.asset-options-sort > VisualElement {
+    background-color: #1e1c29;
+    border-radius: 6px;
+    border-width: 0;
+    padding: 6px 12px;
+}
+
+.asset-options-sort > VisualElement > TextElement {
+    color: #ffffff;
+    font-size: 11px;
+}
+
+/* Style for custom dropdown arrow - sized and scaled */
+.asset-options-sort .unity-base-popup-field__arrow {
+    width: 12px;
+    height: 12px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.asset-options-thumb-group {
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.asset-options-thumb-spacer {
+    height: 14px;
+}
+
+.asset-options-thumb-btn {
+    width: 32px;
+    height: 32px;
+    background-color: #1e1c29;
+    border-width: 1px;
+    border-color: #3a3a4e;
+    border-radius: 6px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 16px;
+    -unity-text-align: middle-center;
+}
+
+.asset-options-thumb-btn:hover {
+    background-color: #2a2a3e;
+}
+
+/* ===== Asset Section ===== */
+.asset-section {
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.asset-scroll {
+    flex-grow: 1;
+}
+
+.asset-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 4px;
+    padding-right: 8px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* ===== Asset Button ===== */
+.asset-btn {
+    position: relative;
+    width: 192px;
+    height: 192px;
+    margin: 4px;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    background-color: transparent;
+    overflow: visible;
+    transition-property: scale;
+    transition-duration: 100ms;
+    transition-timing-function: ease-out;
+    scale: 1 1;
+    cursor: link;
+    transform-origin: center center;
+}
+
+.asset-btn--pressed {
+    scale: 0.95 0.95 !important;
+}
+
+.asset-btn--selected-scale {
+    scale: 1.04 1.04 !important;
+}
+
+.asset-btn--not-owned .asset-btn-bg {
+    -unity-background-image-tint-color: #2a2a2a;
+}
+
+.asset-btn--not-owned {
+    opacity: 0.6;
+}
+
+.asset-btn-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-background-image-tint-color: #000000;
+}
+
+.asset-btn-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.asset-btn-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.asset-btn-round {
+    /* Styles set in C# code */
+}
+
+.asset-btn-round:hover {
+    background-color: #1976D2;
+}
+
+.download-btn {
+    cursor: link;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.download-btn:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: initial;
+}
+
+.download-btn:active {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: initial;
+}
+
+.download-btn:focus {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.cart-btn {
+    cursor: link;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.product-btn {
+    cursor: link;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.product-btn:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.product-btn:active {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.product-btn:focus {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.asset-btn-selected {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.asset-btn-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* External link button (top left) */
+.asset-btn-external {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border-width: 0;
+    padding: 0;
+}
+
+.asset-btn-external:hover {
+    background-color: #dddddd;
+}
+
+.asset-btn-external-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* Text container */
+.asset-btn-text-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 50px;
+    flex-direction: column;
+}
+
+.asset-btn-type {
+    font-size: 11px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.asset-btn-name {
+    font-size: 10px;
+    color: #cccccc;
+    white-space: normal;
+}
+
+/* Download button (bottom right) */
+.asset-btn-download {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    border-width: 0;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    -unity-background-image-tint-color: #00d4aa;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+.asset-btn-download:hover {
+    -unity-background-image-tint-color: #00b894;
+}
+
+.asset-btn-download-icon {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* ===== Banner Button ===== */
+.banner-button {
+    position: absolute;
+    top: 0;
+    left: 135px;
+    right: 32px;
+    height: 54px;
+    flex-direction: row;
+    cursor: link;
+}
+
+.banner-button:hover {
+    opacity: 0.95;
+}
+
+.banner-button--active {
+    opacity: 0.8;
+}
+
+.banner-left {
+    width: 64.7px;
+    height: 54px;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+.banner-center {
+    flex-grow: 1;
+    height: 54px;
+    margin-left: -1px;
+    margin-right: -1px;
+    -unity-background-scale-mode: stretch-to-fill;
+    position: relative;
+}
+
+.banner-right {
+    width: 64.7px;
+    height: 54px;
+    -unity-background-scale-mode: stretch-to-fill;
+}
+
+/* ===== Banner Text ===== */
+.banner-text-container {
+    /* Container for banner title - styles set inline */
+}
+
+.banner-title {
+    -unity-font-style: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.banner-subtitle {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: #000000;
+    -unity-text-align: middle-center;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== Shop Now Container ===== */
+.shop-now-container {
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 26.41px;
+    padding-left: 11px;
+    padding-right: 9px;
+    -unity-slice-left: 10;
+    -unity-slice-right: 10;
+    -unity-slice-top: 10;
+    -unity-slice-bottom: 10;
+    -unity-background-image-tint-color: #000000;
+}
+
+.shop-now-label {
+    font-size: 10.9px;
+    -unity-font-style: bold;
+    color: #ffffff;
+    -unity-text-align: middle-center;
+    margin: 0;
+    padding: 0;
+    padding-right: 4px;
+}
+
+.shop-now-icon {
+    width: 14.45px;
+    height: 14.45px;
+    margin-left: 4.23px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* ===== Logo ===== */
+.logo {
+    position: absolute;
+    top: 11.5px;
+    left: 12.3px;
+    width: 141.6px;
+    height: 43.9px;
+    -unity-background-scale-mode: scale-to-fit;
+}
+
+/* ===== Profile Button ===== */
+.profile-button {
+    position: absolute;
+    top: 7.44px;
+    right: 7.85px;
+    width: 27.7px;
+    height: 27.7px;
+    background-color: transparent;
+    border-width: 0;
+    -unity-background-scale-mode: scale-to-fit;
+    cursor: link;
+}
+
+.profile-button:hover {
+    opacity: 0.8;
+}
+
+.profile-button:active {
+    -unity-background-image-tint-color: #888888;
+    opacity: 0.6;
+}
+
+/* ===== Debug Section (Temporary) ===== */
+.debug-section {
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #2a2a3e;
+    border-radius: 8px;
+}
+
+.debug-title {
+    font-size: 11px;
+    -unity-font-style: bold;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.debug-row {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+    min-height: 24px;
+}
+
+.debug-label {
+    font-size: 11px;
+    color: #888888;
+    width: 80px;
+    flex-shrink: 0;
+    -unity-text-align: middle-left;
+}
+
+.debug-slider {
+    width: 150px;
+    flex-shrink: 0;
+    margin-right: 10px;
+    height: 20px;
+}
+
+.debug-float-field {
+    width: 60px;
+    flex-shrink: 0;
+    height: 22px;
+}
+
+.debug-float-field > TextInput {
+    background-color: #1e1c29;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #3a3a4e;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 4px 6px;
+    height: 100%;
+}
+
+.debug-value {
+    font-size: 11px;
+    color: #ffffff;
+    width: 40px;
+    -unity-text-align: middle-right;
+}
+
+.debug-dropdown {
+    height: 22px;
+    background-color: #1e1c29;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #3a3a4e;
+}
+
+.debug-dropdown > .unity-base-popup-field__input {
+    background-color: #1e1c29;
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+.debug-dropdown > .unity-base-popup-field__text {
+    color: #ffffff;
+    font-size: 11px;
+}
+
+.link-cursor { cursor: link; }
